@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--Anthony Beltran
+    Final website project
+    12/1/2025-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback page</title>
+
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+
+<header role="banner">
+    <div id="topRow">
+        <img id="logoImage" src="images/logo.png" alt="Simple Delicious Meals Logo">
+        <h1>Simple Delicious Meals</h1>
+    </div>
+
+
+    <nav id="top" class="horizontal" role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="instructions.html">Instructions</a></li>
+            <li><a href="Hacks.html">Cooking Tips</a></li>
+            <li><a href="submissions.html">Submissions</a></li>
+            <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+
+<div class="form-container">
+
+    <h2 class="form-title">Website Feedback Survey</h2>
+    <p class="form-description">Please help us improve your experience.</p>
+
+   
+    <form action="#" method="post" aria-describedby="formHelp">
+
+        
+        <fieldset class="form-question">
+            <legend>1. Rate your experience <span class="required">*</span></legend>
+
+            <div class="radio-group">
+                <label for="rate1"><input type="radio" id="rate1" name="rating" value="1" required> ⭐</label>
+                <label for="rate2"><input type="radio" id="rate2" name="rating" value="2"> ⭐⭐</label>
+                <label for="rate3"><input type="radio" id="rate3" name="rating" value="3"> ⭐⭐⭐</label>
+                <label for="rate4"><input type="radio" id="rate4" name="rating" value="4"> ⭐⭐⭐⭐</label>
+                <label for="rate5"><input type="radio" id="rate5" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+            </div>
+        </fieldset>
+
+       
+        <fieldset class="form-question">
+            <legend>2. Was the website easy to navigate? <span class="required">*</span></legend>
+
+            <div class="radio-group">
+                <label for="easyYes"><input type="radio" id="easyYes" name="easy" value="Yes" required> Yes</label>
+                <label for="easyNo"><input type="radio" id="easyNo" name="easy" value="No"> No</label>
+            </div>
+        </fieldset>
+
+       
+        <div class="form-question">
+            <label for="likeMost">3. What did you like the most about the website? <span class="required">*</span></label>
+            <textarea id="likeMost" name="likeMost" placeholder="Write your answer here..." required></textarea>
+        </div>
+
+        
+        <div class="form-question">
+            <label for="improve">4. What would you like us to improve? <span class="required">*</span></label>
+            <textarea id="improve" name="improve" placeholder="Write your suggestions..." required></textarea>
+        </div>
+
+      
+        <fieldset class="form-question">
+            <legend>5. Did all links, images, and videos work correctly? <span class="required">*</span></legend>
+
+            <div class="radio-group">
+                <label for="mediaYes"><input type="radio" id="mediaYes" name="mediaWorks" value="Yes" required> Yes</label>
+                <label for="mediaNo"><input type="radio" id="mediaNo" name="mediaWorks" value="No"> No</label>
+            </div>
+        </fieldset>
+
+       
+        <div class="form-question">
+            <label for="issues">6. If an issue was found, please describe it <span class="required">*</span></label>
+            <textarea id="issues" name="issues" placeholder="Describe any problems you experienced..." required></textarea>
+        </div>
+
+      
+        <button class="submit-btn" type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</main>
+
+
+<header>
+    <nav id="bottom" role="navigation" aria-label="Footer Navigation">
+        <ul>
+            <li><h2><a href="index.html">Home</a></h2></li>
+        </ul>
+
+        <ul>
+            <li><h2>Recipes</h2></li>
+            <li><a href="Recipes.html">Breakfast</a></li>
+            <li><a href="Recipes.html">Lunch</a></li>
+            <li><a href="Recipes.html">Dinner</a></li>
+            <li><a href="Recipes.html">Desserts</a></li>
+        </ul>
+
+        <ul>
+            <li><h2>Cooking Tips & Hacks</h2></li>
+            <li><a href="Hacks.html">How to chop onions</a></li>
+            <li><a href="Hacks.html">How to cook rice perfectly</a></li>
+            <li><a href="Hacks.html">Top 5 meal containers</a></li>
+            <li><a href="Hacks.html">Fun food facts</a></li>
+            <li><a href="Hacks.html">How to chop onions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<footer role="contentinfo">
+    Simple Delicious Meals © 2025 — All Rights Reserved
+</footer>
+
+</body>
+</html>

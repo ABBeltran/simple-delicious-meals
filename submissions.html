@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--Anthony Beltran
+	Final website project
+	12/1/2025-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions Page</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header role="banner">
+    <div id="topRow">
+        <img id="logoImage" src="images/logo.png" alt="Simple Delicious Meals logo">
+
+
+        <h1>Simple Delicious Meals</h1>
+    </div>
+
+
+    <nav id="top" class="horizontal" role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+		    <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="instructions.html">Instructions</a></li>
+            <li><a href="Hacks.html">Cooking Tips</a></li>
+            <li><a href="submissions.html" aria-current="page">Submissions</a></li>
+		    <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+
+<div class="form-container">
+
+  
+    <h2 class="form-title">Recipe Submission Form</h2>
+    <p class="form-description">Please complete all required fields to submit your recipe.</p>
+
+  
+    <form aria-labelledby="form-title" role="form">
+
+        
+        <div class="form-question">
+            <label for="name">Name <span class="required">*</span></label>
+            <input id="name" type="text" name="name" required aria-required="true">
+        </div>
+
+        
+        <div class="form-question">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input id="email" type="email" name="email" required aria-required="true">
+        </div>
+
+       
+        <div class="form-question">
+            <label for="recipe_title">Recipe Title <span class="required">*</span></label>
+            <input id="recipe_title" type="text" name="recipe_title" required aria-required="true">
+        </div>
+
+      
+        <div class="form-question">
+            <label for="category">Category of Meal <span class="required">*</span></label>
+            <select id="category" name="category" required aria-required="true">
+                <option value="">Select a category</option>
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Dessert</option>
+                <option>Snack</option>
+                <option>Drinks</option>
+            </select>
+        </div>
+
+      
+        <div class="form-question">
+            <label for="time_required">Estimated Time Required <span class="required">*</span></label>
+            <input id="time_required" type="time" name="time_required" required aria-required="true">
+        </div>
+
+       
+        <div class="form-question">
+            <label for="ingredients">Ingredients (one per line) <span class="required">*</span></label>
+            <textarea id="ingredients" name="ingredients" required aria-required="true"
+            placeholder="Example:
+1 cup flour
+2 eggs
+½ cup sugar"></textarea>
+        </div>
+
+       
+        <div class="form-question">
+            <label for="instructions">Step-by-Step Instructions <span class="required">*</span></label>
+            <textarea id="instructions" name="instructions" required aria-required="true"
+            placeholder="Write each step clearly..."></textarea>
+        </div>
+
+        
+        <div class="form-question">
+            <label for="image">Upload an Image <span class="required">*</span></label>
+            <input id="image" type="file" name="image" accept="image/*" required aria-required="true">
+        </div>
+
+       
+        <div class="form-question">
+            <label for="notes">Additional Notes (Optional)</label>
+            <textarea id="notes" name="notes" placeholder="Anything extra you'd like to mention..."></textarea>
+        </div>
+
+       
+        <div class="form-question">
+            <fieldset>
+                <legend>Permission to Share Your Recipe <span class="required">*</span></legend>
+                <div class="radio-group">
+                    <label for="perm_yes">
+                        <input id="perm_yes" type="radio" name="permission" value="yes" required aria-required="true">
+                        Yes
+                    </label>
+                    <label for="perm_no">
+                        <input id="perm_no" type="radio" name="permission" value="no" required>
+                        No
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+</div>
+
+</main>
+
+<header>
+    <nav id="bottom">
+	
+<ul>
+	 <li><h2><a href="index.html">Home</a></h2>
+</ul>
+	
+		<ul>
+			<li><h2>Recipes</h2></li>
+        <li><a href="Recipes.html">Breakfast</a></li>
+        <li><a href="Recipes.html">Lunch</a></li>
+        <li><a href="Recipes.html">Dinner</a></li>
+        <li><a href="Recipes.html">Desserts</a></li>
+        </ul> 
+		
+		<ul>
+			<li><h2>Cooking Tips & Hacks</h2></li>
+        <li><a href="Hacks.html">How to chop onions</a></li>
+        <li><a href="Hacks.html">How to cook rice perfectly</a></li>
+        <li><a href="Hacks.html">Top 5 meal containers</a></li>
+        <li><a href="Hacks.html">Fun food facts</a></li>
+        <li><a href="Hacks.html">How to chop onions</a></li>
+			
+		</ul>
+    </nav>
+	</header>
+
+    <footer>
+        Simple Delicious meals @ 2025 all rights reserved
+    </footer>
+
+</body>
+</html>

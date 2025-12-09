@@ -1,0 +1,749 @@
+@charset "utf-8";
+/* Anthony Beltran
+	Final Website project
+	12/1/2025 */
+/* HTML and Body Styles */
+
+main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+main article {
+	flex 3;
+	margin-right: 20px;
+}
+
+main aside#right {
+	flex:1;
+}
+html {
+	background: url('images/cboard.jpg') center / cover fixed no-repeat;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size:12px;
+
+}
+body{
+   background: rgb(236, 236, 236);
+   max-width: 1200px;
+   margin: 0 auto;
+   box-shadow: 
+   10px 10px 25px rgb(51, 51, 51),
+   -10px 10px 25px rgb(51, 51, 51);
+   display: flex;
+   flex-flow: row wrap;
+}
+
+header h1 {
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+		font-size: 4em
+}
+
+body > header {
+   background: url('images/orange.jpg') center / cover no-repeat;
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px
+}
+
+#topRow{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	
+}
+
+img#logoImage {
+	width: 40%;
+    max-width: 100px;
+	border-radius: 20px;
+	border: 5px solid rgba(27, 117, 188);
+	box-shadow: 10px 10px 20px rgb(51, 51, 51);
+}
+
+/* Navicon Styles */
+a#navicon{
+	float: right;
+}
+
+a#navicon:hover + ul, nav.horizontal ul:hover{ display: block;
+}
+
+/* Top Navigation Styles */
+
+nav#top{
+	background-color: rgb(27, 117, 188);
+    width: 100%;
+	box-shadow: 0px -10px 20px rgb(51, 51, 51);
+	}
+	
+nav#top::after{
+	content: "";
+   display: table;
+   clear: both;
+}
+
+nav#top ul {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   padding-bottom: 10px;
+   list-style:none;
+   width: 100%
+}
+nav#top ul li{
+   background-color: rgb(27,117, 188);
+   line-height: 2em;
+   font-size: 1.5em;
+   padding: 0 10px;
+
+}
+
+nav#top ul li a {
+	color: white;
+    display: block;
+   margin-left: 0px;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+nav#top ul li a:hover {
+	color: orange;
+}
+
+/* Flex Sizes and Order */
+aside#left{
+	flex: 1 5 200px;
+	order: 50;
+}
+
+article { 
+	flex: 5 1 281px;
+}
+
+aside#right {
+	flex: 2 2 200px;
+}
+
+nav#bottom {
+	order: 75;
+}
+
+
+body > footer {
+	order: 100;
+}
+
+/* Left Aside Styles */
+
+aside#left {
+	background-color: rgb(186, 215, 236);
+}
+
+aside#left h1 {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  margin: 10px auto;
+}
+
+aside#left p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin: 10px auto;
+}
+
+/* Right Aside Styles */
+
+aside#right {
+  background-color: rgb(27, 117, 188);
+  color: white;
+}
+
+aside#right h1 {
+  font-size: 3em;
+  margin: 10px 0;
+  text-align: center;
+  letter-spacing: 0.2em;
+  line-height: 2em;
+}
+
+aside#right a{
+	color: white;
+	text-decoration: none;
+}
+
+aside#right a:hover{
+	color: orange;
+}
+
+dl {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+dt, dd {
+  width: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+dt {
+  border-top: 1px solid black;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+/* Article Styles */
+
+article img {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+article p {
+    text-align: center;
+    margin: 20px;
+}
+
+article a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: center;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article h1 a:hover {
+    color: orange;
+}
+
+
+article ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;              
+    flex-direction: column;     
+    gap: 10px;                  
+}
+
+article .ul-container {
+    display: flex;              
+    justify-content: center;    
+    flex-wrap: wrap;            
+    gap: 40px;                  
+    width: 100%;
+    text-align: center;
+}
+
+article ul li {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+article ul li img {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+article ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+article ul li a:hover {
+    color: orange;
+}
+
+
+
+		
+/* Bottom Navigation Styles */
+
+nav#bottom {
+    color: black;
+    background-color: rgb(27, 117, 188);
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;           
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav#bottom h2 {
+    width: 100%;               
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: white;
+}
+
+nav#bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;            
+    display: block;            
+    text-align: center;
+}
+
+nav#bottom ul li {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+nav#bottom ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav#bottom ul li a:hover {
+    color: orange;
+}
+
+/* Footer Styles */
+
+body > footer {
+   width: 100%;
+   text-align: center;
+   background-color: rgb(51, 51, 51);
+   color: white;
+   padding: 10px 0px;
+}
+@media only screen and (max-width: 480px) {
+   aside#right {
+      display: none;
+   }   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.4em;
+   }   
+   /* Telephone and Email Styles */      
+   aside#left p a {
+      display: block;
+      width: 220px;
+      margin: 0px auto;
+      background-color: rgb(27, 117, 188);
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      font-size: 1.2em;
+      text-decoration: none;
+   }
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+   /* Navion Style */
+   
+   a#navicon {
+      display: none;
+   }
+   
+   nav#top ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      position: relative;
+   }  
+   nav#top ul li {
+      width: 100px;
+   }   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+   }
+}
+@media only screen and (min-width: 681px) {
+    aside#left {
+       order: initial;
+   }
+}
+
+.form-container {
+    width: 90%;
+    max-width: 700px;
+    background: rgb(236, 236, 236); 
+    padding: 25px 35px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 
+        10px 10px 25px rgb(51, 51, 51),
+        -10px 10px 25px rgb(51, 51, 51);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.form-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(27, 117, 188);
+    margin-bottom: 10px;
+}
+
+.form-description {
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-question {
+    margin-bottom: 25px;
+}
+
+.form-question label {
+    font-size: 1.3em;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="time"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(27, 117, 188);
+    border-radius: 8px;
+    font-size: 1.2em;
+    background: white;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    background: rgb(27, 117, 188);
+    color: white;
+    padding: 15px 0;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgb(51, 51, 51);
+}
+
+.submit-btn:hover {
+    background: orange;
+    color: black;
+}
+
+
+:focus {
+    outline: 4px solid #ffbf00 !important;
+    outline-offset: 3px;
+}
+
+
+nav#top ul li a:focus,
+nav#bottom ul li a:focus,
+aside#right a:focus {
+    background-color: black;
+    color: #ffbf00;
+}
+
+
+button:focus,
+.submit-btn:focus,
+#navicon:focus {
+    outline: 4px solid #ffbf00 !important;
+    outline-offset: 3px;
+}
+
+
+a {
+    color: #003399;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: #001a66;
+}
+
+nav#top ul li a,
+nav#bottom ul li a,
+aside#right a {
+    text-decoration: none;
+}
+
+nav#top ul li a:focus,
+nav#bottom ul li a:focus {
+    text-decoration: underline;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+figure {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;        
+    text-align: center;
+    margin: 20px auto;          
+    width: 100%;               
+}
+
+figure img {
+    width: 200px;               
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;             
+}
+: 250px}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+
+#navicon {
+    background-color: rgb(27, 117, 188);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 1.4em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#navicon:hover,
+#navicon:focus {
+    background-color: orange;
+    color: black;
+}
+
+
+#navicon[aria-expanded="true"] + nav#top {
+    display: block !important;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="time"],
+textarea,
+select {
+    padding: 12px;
+    font-size: 1.2em;
+    border: 3px solid rgb(27, 117, 188);
+    background-color: white;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ffbf00;
+    background-color: #fff7d1;
+}
+
+
+.required {
+    color: #b30000;
+    font-weight: bold;
+}
+
+
+
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #ffbf00;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    text-decoration: none;
+    z-index: 999;
+    border-radius: 6px;
+}
+
+.skip-to-content:focus {
+    top: 10px;
+}
+
+
+
+aside#right {
+    color: white;
+}
+
+
+aside#right dt {
+    border-top: 2px solid white;
+}
+
+
+aside#right a {
+    color: #ffeb99;
+}
+
+aside#right a:hover,
+aside#right a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 480px) {
+    #top {
+        display: none;
+    }
+
+    #navicon[aria-expanded="true"] + #top {
+        display: block;
+    }
+}
+
+
+nav#top ul li a:focus,
+nav#bottom ul li a:focus {
+    background-color: black;
+    color: #ffbf00 !important;
+}
+
+/* Article image links */
+article a:focus {
+    color: #ffbf00;
+    text-decoration: underline;
+}
+
+
+
+.ingredient-table {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1.3em;
+    background-color: white;
+    box-shadow: 
+        10px 10px 25px rgb(51, 51, 51),
+        -10px 10px 25px rgb(51, 51, 51);
+}
+
+.ingredient-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 12px;
+    color: rgb(27, 117, 188);
+}
+
+.ingredient-table th,
+.ingredient-table td {
+    border: 2px solid rgb(27, 117, 188);
+    padding: 12px;
+    text-align: center;
+}
+
+.ingredient-table th {
+    background-color: rgb(27, 117, 188);
+    color: white;
+    font-weight: bold;
+}
+
+.ingredient-table tr:nth-child(even) td {
+    background-color: rgb(236, 236, 236);
+}
+
+.ingredient-table tr:nth-child(odd) td {
+    background-color: white;
+}
+
+
+.ingredient-table td:focus,
+.ingredient-table th:focus {
+    outline: 4px solid #ffbf00;
+    outline-offset: 3px;
+    background-color: #fff7d1;
+}
+
+
+@media (max-width: 480px) {
+    .ingredient-table {
+        font-size: 1.1em;
+        width: 100%;
+    }
+}
+
+main section {
+    text-align: center; 
+}
+
+main ol {
+    list-style-position: inside; 
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main ol li {
+    text-align: center;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Anthony Beltran - Final Website Project - 12/1/2025 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div id="topRow">
+        <img id="logoImage" src="images/logo.png" alt="Website logo">
+        <h1>Simple Delicious Meals</h1>
+    </div>
+
+    <nav id="top" class="horizontal" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="instructions.html">Instructions</a></li>
+            <li><a href="Hacks.html">Cooking Tips</a></li>
+            <li><a href="submissions.html">Submissions</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<article>
+    <h1>Recipes from Simple Delicious Meals</h1>
+
+    <p>
+        Here are some quick recipes for our currently listed meals. More recipes are coming soon
+        as the website is still under maintenance.
+    </p>
+
+
+    <section aria-labelledby="recipe1-title">
+        <h2 id="recipe1-title">Peanut Butter Sandwich</h2>
+        <figure>
+            <img src="images/pb.jpg" alt="Peanut butter sandwich">
+        </figure>
+
+
+        <!-- NEW: accessible ingredient table (keeps layout intact) -->
+        <table class="ingredient-table" summary="Ingredients and amounts for Peanut Butter Sandwich">
+            <caption>Ingredients for Peanut Butter Sandwich</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Ingredient</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Peanut butter</td>
+                    <td>2 tbsp</td>
+                    <td>Creamy or crunchy</td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td>2 slices</td>
+                    <td>Your preferred type</td>
+                </tr>
+                <tr>
+                    <td>Jam/Jelly</td>
+                    <td>Optional</td>
+                    <td>Any flavor</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+ 
+    <section aria-labelledby="recipe2-title">
+        <h2 id="recipe2-title">Pizza Bread</h2>
+        <figure>
+            <img src="images/pbread.jpg" alt="Pizza bread">
+        </figure>
+
+
+
+        <table class="ingredient-table" summary="Ingredients and amounts for Pizza Bread">
+            <caption>Ingredients for Pizza Bread</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Ingredient</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bread</td>
+                    <td>1 slice</td>
+                    <td>Any bread works</td>
+                </tr>
+                <tr>
+                    <td>Pizza sauce</td>
+                    <td>2 tbsp</td>
+                    <td>Marinara also works</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>¼ cup</td>
+                    <td>Mozzarella recommended</td>
+                </tr>
+                <tr>
+                    <td>Pepperoni</td>
+                    <td>3–5 slices</td>
+                    <td>Optional</td>
+                </tr>
+                <tr>
+                    <td>Herb seasoning</td>
+                    <td>To taste</td>
+                    <td>Italian blend</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section aria-labelledby="recipe3-title">
+        <h2 id="recipe3-title">Meatball Sandwich</h2>
+        <figure>
+            <img src="images/mbread.jpg" alt="Meatball sandwich">
+        </figure>
+
+
+        <table class="ingredient-table" summary="Ingredients and amounts for Meatball Sandwich">
+            <caption>Ingredients for Meatball Sandwich</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Ingredient</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hoagie roll</td>
+                    <td>1</td>
+                    <td>Sliced</td>
+                </tr>
+                <tr>
+                    <td>Pre-cooked meatballs</td>
+                    <td>4–6</td>
+                    <td>Beef, turkey, or chicken</td>
+                </tr>
+                <tr>
+                    <td>Marinara sauce</td>
+                    <td>½ cup</td>
+                    <td>Warm before adding</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>¼ cup</td>
+                    <td>Mozzarella or provolone</td>
+                </tr>
+                <tr>
+                    <td>Italian seasoning</td>
+                    <td>To taste</td>
+                    <td>Optional</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <h2>
+        <a href="shoppinglist.pdf" download="shoppinglist.pdf">Downloadable Shopping List (PDF)</a>
+    </h2>
+</article>
+</main>
+
+<!-- Bottom Navigation -->
+<header>
+<nav id="bottom" aria-label="Footer Navigation">
+    <ul>
+        <li><h2><a href="index.html">Home</a></h2></li>
+    </ul>
+
+    <ul>
+        <li><h2>Recipes</h2></li>
+        <li><a href="Recipes.html">Breakfast</a></li>
+        <li><a href="Recipes.html">Lunch</a></li>
+        <li><a href="Recipes.html">Dinner</a></li>
+        <li><a href="Recipes.html">Desserts</a></li>
+    </ul>
+
+    <ul>
+        <li><h2>Cooking Tips & Hacks</h2></li>
+        <li><a href="Hacks.html">How to chop onions</a></li>
+        <li><a href="Hacks.html">How to cook rice perfectly</a></li>
+        <li><a href="Hacks.html">Top 5 meal containers</a></li>
+        <li><a href="Hacks.html">Fun food facts</a></li>
+        <li><a href="Hacks.html">Knife safety basics</a></li>
+    </ul>
+</nav>
+</header>
+
+<footer>
+    Simple Delicious Meals © 2025 — All rights reserved.
+</footer>
+
+</body>
+</html>
